@@ -43,6 +43,7 @@ body{
 .links a:hover{
   color: yellow;
 }
+/*banner principal*/
 .contenedor-sp{
   width: 100%;
   height: 260px;
@@ -68,6 +69,7 @@ body{
   font-size: 32px;
   color: yellow;
 }
+/*Quienes somos*/
 .q-s{
   background-color: #0471F8;
   padding: 10px;
@@ -80,6 +82,7 @@ body{
   overflow: hidden;
   border-radius: 10px;
 }
+/*Titulos principales*/
 .titulo{
   font-size: 24px;
   margin: 20px;
@@ -95,11 +98,13 @@ body{
   text-align: justify;
   padding-top: 30px;
 }
+/*Nuestros Proyectos*/
 .n-p{
   background-color: #0471F8;
   padding: 10px;
   margin-bottom: 20px;
 }
+/*Articulos*/
 .contenedor-articulo{
   display: flex;
   justify-content: space-evenly;
@@ -126,6 +131,7 @@ body{
   font-size: 14px;
   text-align: justify;
 }
+/*Contacto*/
 .contacto{
   background-color: #0471F8;
   padding: 10px;
@@ -148,6 +154,12 @@ li{
   font-size: 24px;
   padding: 30px;
 }
+li .icon_contacto{
+  width: 10%;
+	max-width:120px;
+	padding: 5px;
+	margin: -10px auto;
+}
 footer{
   width: 100%;
   height: 60px;
@@ -157,4 +169,14 @@ footer{
 p{
   font-size: 18px;
   text-align: center;
+}
+/*Adaptaciones a pantallas mas chicas*/
+@media screen and (max-width: 900px) {
+
+}
+@media screen and (max-width: 700px) {
+
+}
+@media screen and (max-width: 500px) {
+
 }
