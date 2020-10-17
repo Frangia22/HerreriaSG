@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Respirators Laboulaye</title>
+    <style>
+    html {font-family: Arial; display: inline-block; text-align: center;}
+    h2 {font-size: 32px; padding: 20px;}
+    p {font-size: 2.2rem;}
+    body {max-width: 100%; margin:0px auto; padding-bottom: 25px;}
+    .switch-button {display: inline-block;}
+    .switch-button .switch-button__checkbox {display: none;}
+    .switch-button .switch-button__label {background-color: #FF0000; width: 5rem; height: 3rem; border-radius: 3rem; display: inline-block; position: relative;}
+    .switch-button .switch-button__label:before {
+    transition: .2s; display: block; position: absolute; width: 3rem; height: 3rem; background-color: #FFF; content: ''; border-radius: 50%; box-shadow: inset 0px 0px 0px 1px #000;}
+    .switch-button .switch-button__checkbox:checked + .switch-button__label {background-color: #0471F8;}
+    .switch-button .switch-button__checkbox:checked + .switch-button__label:before {transform: translateX(2rem);}
+    .slider2 { -webkit-appearance: none; margin: 14px; width: 360px; height: 25px; background: #FFD65C;
+      outline: none; -webkit-transition: .2s; transition: opacity .2s;}
+    .slider2::-webkit-slider-thumb {-webkit-appearance: none; appearance: none; width: 35px; height: 35px; background: #003249; cursor: pointer;}
+    .slider2::-moz-range-thumb { width: 35px; height: 35px; background: #003249; cursor: pointer; }
+    .slider {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; border-radius: 34px}
+    .slider:before {position: absolute; content: ""; height: 52px; width: 52px; left: 8px; bottom: 8px; background-color: #fff; -webkit-transition: .4s; transition: .4s; border-radius: 68px}
+    .units { font-size: 1.2rem; }
+    .dht-labels{ font-size: 1.5rem; vertical-align:middle; padding-bottom: 15px; }
+    .container{ width:100%; height: 5em; background-color: #0471F8; margin-bottom: 2em;}
+    .header{text-align: center; }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Respirators Laboulaye</h2>
+      </div>
+    </div>
+  <div class="switch-button">
+    <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
+    <label for="switch-label" class="switch-button__label"></label>
+  </div>
+
+  <p><span id="textSliderValue">0</span></p>
+  <p><input type="range" onchange="updateSliderPWM(this)" id="pwmSlider" min="0" max="1023" value="%SLIDERVALUE%" step="1" class="slider2"></p>
+  <p>
+    <i class="fas fa-thermometer-half" style="color:#059e8a;"></i>
+    <span class="dht-labels">Presion de trabajo</span>
+    <span id="presion">0</span>
+    <sup class="units">&deg;Kpa</sup>
+  </p>
+
+  </body>
+</html>

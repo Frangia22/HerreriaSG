@@ -1,28 +1,22 @@
 *{
   margin: 0;
 	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 body{
-	font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
 }
-
 /*header*/
 .header{
   width: 100%;
   background: #0471F8;
-  margin-left: 0;
-  margin-top: 0;
+  left: 0;
+  top: 0;
   position: fixed;
 }
-.nav-header{
+.nav-header{  
     color: #fff;
     height: 70px;
-    border-bottom: 1px solid rgba(255,255,255, 0.1);
 }
 .contenedor-nav{
   display: flex;
@@ -48,28 +42,22 @@ body{
 /*banner principal*/
 .contenedor-sp{
   width: 100%;
-  height: 260px;
-  background-color: #fff;
-  margin-top: 50px;
+  margin-top: 55px;
 }
-.imagen-t{
-  width: 100%;
-  max-height: 260px;
-
-}
-.titulo-sp{
-    width: 100%;
-    height: 50%;
-    text-align: center;
+.titulo-sp {
+  height: 18em;
+  background-image: url(../img/img-principal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .titulo-sp h2{
   font-size: 24px;
-  margin: -150px;
   color: #fff;
+  text-align: center;
+  padding: 120px;
 }
-.titulo-sp  .titulo-2:hover{
-  font-size: 32px;
-  color: yellow;
+.titulo-sp h2 span:hover{
+  color: #FFFF00;
 }
 /*Quienes somos*/
 .q-s{
@@ -140,20 +128,19 @@ body{
   margin-bottom: 20px;
 }
 iframe{
-  margin: 20px;
+  margin: 10px;
 }
 .contenedor-contacto{
-  width: 50%;
+  width: 45%;
   height: 300px;
   float: right;
-
-  margin: 20px 40px;
+  margin: 10px 20px;
 }
 ul{
   list-style: none;
 }
 li{
-  font-size: 24px;
+  font-size: 18px;
   padding: 30px;
 }
 li .icon_contacto{
@@ -172,201 +159,226 @@ p{
   font-size: 18px;
   text-align: center;
 }
+
 /*Adaptaciones a pantallas mas chicas*/
-@media screen and (max-width: 900px) {
-  /*header*/
-.header{
-  width: 100%;
-  background: #0471F8;
-  left: 0;
-  top: 0;
-  position: fixed;
+@media (max-width: 900px){
+  /*Quienes somos*/
+.q-s{
+background-color: #0471F8;
+padding: 10px;
+margin-bottom: 20px;
 }
-  /*Contacto*/
+.contenedor{
+width: 95%;
+background-color: #fe56;
+margin: 50px auto;
+overflow: hidden;
+border-radius: 10px;
+}
+/*Titulos principales*/
+.titulo{
+font-size: 24px;
+margin: 20px;
+}
+.articulo-qs{
+ width: 90%;
+ margin-left: 30px;
+ margin-bottom: 30px;
+
+}
+.p-qs{
+font-size: 14px;
+text-align: justify;
+padding-top: 30px;
+}
+/*Contacto*/
 .contacto{
-  background-color: #0471F8;
-  padding: 10px;
-  margin-bottom: 20px;
+background-color: #0471F8;
+padding: 10px;
+margin-bottom: 20px;
 }
 iframe{
-  margin: auto 110px;
+width: 95%;
+margin: auto 15px;
 }
 .contenedor-contacto{
-  width: 70%;
-  height: 300px;
-  margin: auto 100px;
+width: 100%;
+height: 300px;
+margin: 20px 0px;
+
 }
 ul{
-  list-style: none;
+list-style: none;
 }
 li{
-  font-size: 24px;
-  padding: 30px;
+font-size: 18px;
+padding: 30px;
+text-align: justify
 }
 li .icon_contacto{
-  width: 10%;
-	max-width:120px;
-	padding: 5px;
-	margin: -10px auto;
+width: 6%;
+max-width:120px;
+padding: 5px;
+margin: -10px auto;
 }
+footer{
+width: 100%;
+height: 60px;
+background-color: #0471F8;
+padding: 20px;
+}
+p{
+font-size: 18px;
+text-align: center;
+}
+}
+@media (max-width: 700px){
+  /*Quienes somos*/
+.q-s{
+background-color: #0471F8;
+padding: 10px;
+margin-bottom: 20px;
+}
+.contenedor{
+width: 95%;
+background-color: #fe56;
+margin: 50px auto;
+overflow: hidden;
+border-radius: 10px;
+}
+/*Titulos principales*/
+.titulo{
+font-size: 24px;
+margin: 20px;
+}
+.articulo-qs{
+ width: 90%;
+ margin-left: 30px;
+ margin-bottom: 30px;
 
 }
-@media screen and (max-width: 700px) {
-  /*header*/
-.header{
-  width: 100%;
-  background: #0471F8;
-  left: 0;
-  top: 0;
-  position: fixed;
+.p-qs{
+font-size: 14px;
+text-align: justify;
+padding-top: 30px;
 }
-  /*banner principal*/
-.contenedor-sp{
-  width: 100%;
-  height: 220px;
-  background-color: #fff;
-  margin-top: 50px;
-}
-.imagen-t{
-  width: 100%;
-  max-height: 260px;
-
-}
-.titulo-sp{
-    width: 100%;
-    height: 50%;
-    text-align: center;
-}
-.titulo-sp h2{
-  font-size: 18px;
-  margin: -120px;
-  color: #fff;
-}
-.titulo-sp  .titulo-2:hover{
-  font-size: 24px;
-  color: yellow;
-}
-  /*Articulos*/
-.contenedor-articulo{
-  display: flex;
-  flex-flow: wrap;
- }
-.articulo{
-  width: 90%;
-  padding: 30px;
-  overflow: hidden;
-  background-color: #fe56;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-.imagen-a{
-  width: 100%;
-  height: 200px;
-  border-radius: 10px;
-  margin-bottom: 5px;
-}
-.titulo-articulo{
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-.tecto-articulo{
-  font-size: 14px;
-  text-align: justify;
-}
-  /*Contacto*/
+/*Contacto*/
 .contacto{
-  background-color: #0471F8;
-  padding: 10px;
-  margin-bottom: 20px;
+background-color: #0471F8;
+padding: 10px;
+margin-bottom: 20px;
 }
 iframe{
-  width: 80%;
-  margin: auto 50px;
+width: 95%;
+margin: auto 15px;
 }
 .contenedor-contacto{
-  width: 85%;
-  height: 300px;
-  margin: 20px 40px;
+width: 100%;
+height: 250px;
+margin: 20px 0px;
 }
 ul{
-  list-style: none;
+list-style: none;
 }
 li{
-  font-size: 24px;
-  padding: 30px;
+font-size: 18px;
+padding: 30px;
 }
 li .icon_contacto{
-  width: 10%;
-	max-width:120px;
-	padding: 5px;
-	margin: -10px auto;
+width: 8%;
+max-width:120px;
+padding: 5px;
+margin: -10px auto;
 }
-
+footer{
+width: 100%;
+height: 60px;
+background-color: #0471F8;
+padding: 20px;
 }
-@media screen and (max-width: 500px) {
-  /*header*/
-.header{
-  max-width: 500px;
-  background: #0471F8;
-  margin-left: 0;
-  margin-top: 0;
-  position: fixed;
+p{
+font-size: 18px;
+text-align: center;
 }
- /*banner principal*/
-.contenedor-sp{
-  width: 100%;
-  height: 145px;
-  background-color: #fff;
-  margin-top: 50px;
 }
-.imagen-t{
-  width: 100%;
-  max-height: 260px;
-}
-.titulo-sp{
+@media (max-width: 500px){
+  .logo h1{
+    font-size: 28px;
+    color: #fff;
+  }
+  .links{
+    padding: 5px;
+  }
+  .links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  .links a:hover{
+    color: yellow;
+  }
+  .contenedor-sp{
     width: 100%;
-    height: 50%;
+    margin-top: 40px;
+  }
+  .titulo-sp {
+    height: 10em;
+    background-image: url(../img/img-principal.jpg);
+    background-size: contain ;
+    background-repeat: round;
+  }
+  .titulo-sp h2{
+    font-size: 16px;
+    color: #fff;
     text-align: center;
-}
-.titulo-sp h2{
-  font-size: 16px;
-  margin: -90px;
-  color: #fff;
-}
-.titulo-sp  .titulo-2:hover{
-  font-size: 20px;
-  color: yellow;
-}
-    .q-s{
+    padding: 60px;
+  }
+  .titulo-sp h2 span:hover{
+    color: #FFFF00;
+  }
+  /*Quienes somos*/
+.q-s{
   background-color: #0471F8;
   padding: 10px;
   margin-bottom: 20px;
 }
-  .contenedor{
-  width: 90%;
+.contenedor{
+  width: 100%;
   background-color: #fe56;
   margin: 50px auto;
   overflow: hidden;
   border-radius: 10px;
 }
- .articulo-qs{
-   width: 90%;
-   margin-left: 15px;
-   margin-bottom: 20px;
+/*Titulos principales*/
+.titulo{
+  font-size: 24px;
+  text-align: center;
+  margin: 10px;
+}
+.articulo-qs{
+   width: 85%;
+   margin-left: 20px;
+   margin-bottom: 30px;
+
 }
 .p-qs{
   font-size: 12px;
   text-align: justify;
-  padding-top: 20px;
-  overflow: hidden;
+  padding-top: 30px;
 }
-  /*Articulos*/
+/*Nuestros Proyectos*/
+.n-p{
+  background-color: #0471F8;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+/*Articulos*/
 .contenedor-articulo{
   display: flex;
   flex-flow: wrap;
  }
 .articulo{
-  width: 90%;
+  width: 100%;
   padding: 30px;
   overflow: hidden;
   background-color: #fe56;
@@ -380,41 +392,51 @@ li .icon_contacto{
   margin-bottom: 5px;
 }
 .titulo-articulo{
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 .tecto-articulo{
-  font-size: 14px;
+  font-size: 12px;
   text-align: justify;
 }
-  /*Contacto*/
+/*Contacto*/
 .contacto{
-  width: 100%;
   background-color: #0471F8;
-  padding: 2px;
+  padding: 10px;
   margin-bottom: 20px;
 }
 iframe{
-  width: 90%;
-  margin: auto 20px;
+  width: 95%;
+  margin: 7px;
 }
 .contenedor-contacto{
   width: 100%;
-  height: 300px;
+  height: 250px;
   margin: 20px 0px;
 }
 ul{
   list-style: none;
 }
 li{
-  font-size: 18px;
+  font-size: 16px;
   padding: 30px;
 }
 li .icon_contacto{
   width: 15%;
-	max-width: 100px;
+	max-width:120px;
 	padding: 5px;
 	margin: -10px auto;
 }
-
+footer{
+  width: 100%;
+  height: 60px;
+  background-color: #0471F8;
+  padding: 20px;
 }
+p{
+  font-size: 18px;
+  text-align: center;
+}
+}
+
+/*factibilidad,analisis y requisito-diseñaraplicaciondigital-iot ______COSAS PARA AGREGAR A LA TESINA______*/
